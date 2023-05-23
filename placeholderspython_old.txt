@@ -1,0 +1,19 @@
+    %s: String (or any object with a string representation, like numbers)
+    %d: Decimal integers (base-10)
+    %f: Floating point numbers
+    %.<number of digits>f: Floating point numbers with a fixed amount of digits to the right of the dot.
+    %x/%X: Integers in hexadecimal (base-16)
+    %o: Integers in octal (base-8)
+    %%: A literal percent sign (%) itself (useful when escaping the % character)
+EXAMPLE:
+In the string "My name is %s and I am %d years old":
+
+%s and %d are placeholders for string and integer values, respectively.
+
+%s is used as a placeholder for a string value.
+When the %s placeholder is used in a string,
+it means that a string value will be inserted in its place.
+
+%d is used as a placeholder for an integer value.
+When the %d placeholder is used in a string,
+it means that an integer value will be inserted in its place.

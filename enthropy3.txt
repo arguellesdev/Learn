@@ -1,0 +1,6 @@
+The zeroth law of thermodynamics states that if there are two bodies (A and B)
+that are in thermal equilibrium with another body (third body as C) 
+then these two bodies are also in thermal equilibrium with each another. 
+ Since such a conclusion may seem trivial and easy to reach,
+some may feel that it is not worth being one of the basic laws of thermodynamics.  
+Source: Ibrahim Dincer, in Comprehensive Energy Systems, 2018.

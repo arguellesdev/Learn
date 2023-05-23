@@ -1,0 +1,74 @@
+ASCII: ASCII stands for American Standard Code for Information Interchange.
+It is a character encoding that assigns a unique number to each letter, digit,
+and symbol on the standard keyboard. ASCII is used for representing text in
+many different contexts, such as in email messages, text editors, and programming languages.
+            text = "Hello, world!"
+            encoded_text = text.encode("ascii")
+            print(encoded_text)
+            Output: b'Hello, world!'
+
+Unicode: Unicode is a character encoding that can represent virtually every
+character from every language and writing system in the world. It includes over
+143,000 characters and covers more than 150 scripts, including Latin, Arabic,
+Chinese, and many others. Unicode is used in many applications that require
+internationalization, such as web browsers, operating systems, and mobile devices.
+            text = "こんにちは世界"
+            encoded_text = text.encode("utf-8")
+            print(encoded_text)
+            Output: b'\xe3\x81\x93\xe3\x82\x93\xe3\x81\xab\xe3\x81\xa1\xe3\x81\xaf\xe4\xb8\x96\xe7\x95\x8c'
+UTF-8: UTF-8 is a variable-length character encoding that is capable of representing
+all possible characters in Unicode. It uses one to four bytes to represent each
+character, depending on its code point value. UTF-8 is widely used on the web,
+and is the default encoding for HTML and XML documents.
+
+UTF-8 uses variable-length encoding, which means that each character may require one to four bytes.
+The resulting bytes object represents each character in the string using its corresponding UTF-8 code point.
+
+Base64: Base64 is a binary-to-text encoding scheme that represents binary data in
+an ASCII string format. It is commonly used for encoding binary data in email messages
+and other contexts where non-ASCII characters are not allowed. Base64-encoded data
+is typically about 33% larger than the original binary data.
+
+            import base64
+            data = b"Hello, world!"
+            encoded_data = base64.b64encode(data)
+            print(encoded_data)
+            Output: b'SGVsbG8sIHdvcmxkIQ=='
+method from the base64 module to convert the binary data to a Base64-encoded bytes object.
+The resulting string is longer than the original data because Base64 encoding requires more
+characters to represent the same amount of data.
+
+Hexadecimal: Hexadecimal (or "hex") encoding is a way of representing binary data
+using the 16 characters 0-9 and A-F. Each pair of hexadecimal digits represents
+one byte of data. Hex encoding is commonly used in programming and debugging to
+represent binary data in a more human-readable format.
+            data = b"\x01\x23\x45\x67\x89\xab\xcd\xef"
+            encoded_data = data.hex()
+            print(encoded_data)
+            Output: 0123456789abcdef
+
+Binary
+    Decimal 1 = Binary 0001
+    Decimal 2 = Binary 0010
+    Decimal 5 = Binary 0101
+    Decimal 10 = Binary 1010
+    Decimal 16 = Binary 0001 0000
+    Decimal 32 = Binary 0010 0000
+    Decimal 64 = Binary 0100 0000
+    Decimal 128 = Binary 1000 0000
+
+Let's convert the decimal number 13 to binary:
+
+    Divide 13 by 2, which gives a quotient of 6 and a remainder of 1.
+    Write down the remainder (1) as the rightmost digit in the binary number.
+    Divide 6 by 2, which gives a quotient of 3 and a remainder of 0.
+    Write down the remainder (0) as the next digit to the left in the binary number.
+    Divide 3 by 2, which gives a quotient of 1 and a remainder of 1.
+    Write down the remainder (1) as the next digit to the left in the binary number.
+    Divide 1 by 2, which gives a quotient of 0 and a remainder of 1.
+    Write down the remainder (1) as the leftmost digit in the binary number.
+    The final binary number is 1101, which is equivalent to decimal 13.
+
+These are just a few examples of encoding types used in computing.
+Other types of encoding include binary, decimal, and octal.
+The choice of encoding depends on the context and the type of data being represented.
